@@ -1,0 +1,514 @@
+.jumbotron,
+.card-body,
+.container,
+.site-header {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+.jumbotron .display-4 {
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.jumbotron {
+  height: 50vh;
+  padding: 5em inherit;
+  margin-bottom: 0;
+  background-color: #53C0FB;
+  background: url('../img/cover_back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px grey;
+
+}
+
+.jumbotron .lead {
+  font-size: 38px;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.site-header a {
+  color: white;
+  transition: ease-in-out color .15s;
+}
+
+.site-header .dropdown-menu a {
+  color: rgb(187, 186, 186);
+}
+
+.dropzone {
+  border: 2px dashed #0087F7;
+  border-radius: 5px;
+  background: white;
+}
+
+.img-fit {
+  max-height: 100%;
+}
+
+.alert {
+  position: fixed;
+  top: 80px;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+}
+
+.cursor-active {
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+#spinner-wrapper {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1021;
+  display: none;
+}
+
+main {
+  min-height: calc(100vh - 210px);
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.checked {
+  color: orange;
+}
+
+#imagenlogin {
+  width: 25rem;
+  border-radius: 25px;
+}
+
+#image_car {
+  border-radius: 25px;
+}
+
+#image_car {
+  transition: transform .5s;
+}
+
+#image_car:hover {
+  transform: scale(1.2);
+  cursor:zoom-in;
+}
+
+#body_login {
+  margin: 50px;
+  background-color: rgba(17, 122, 101, 0.15);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  align-content: center;
+}
+
+
+.login_btn {
+  width: 40%;
+  height: 40px;
+  background: rgba(17, 122, 101, 0.55) !important;
+  color: whitesmoke;
+  margin-top: 15px;
+  margin-left: 30%;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+.login_btn:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.login_btn:hover {
+  color: black;
+}
+
+.icono {
+  width: 25px;
+  height: 25px;
+}
+
+#inicio_login {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bolder;
+  color: #009999;
+}
+
+.label_login {
+  text-align: center;
+  color: #009999;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.checkbox_login {
+  text-align: center;
+  margin: 5px;
+  color: #009999;
+  font-weight: 700;
+}
+
+.label_alert {
+  color: red;
+  text-align: center;
+  font-size: smaller;
+}
+
+#usuario,
+#password {
+  border-radius: 15px;
+  text-align: center;
+}
+
+.google {
+  margin-top: 5%;
+  margin-left: 40%;
+  margin-bottom: 5%;
+  color: #fff;
+  text-align: center;
+}
+
+.nav-link{
+  font-size: 18px;
+  color: #009999 !important;
+}
+.nav-link:hover{
+  color: #fff !important;
+}
+.descripcion_productos{
+  width: 80%;
+  
+  font-size: 18px;
+  margin-top: 1rem;
+}
+.imagen_productos{
+  background-color:#009999;
+  width: 100%;
+  padding: auto;
+  margin: 3rem;
+}
+.info_products{
+  margin: 1rem;
+  width: 25rem;
+  font-size: 15px;
+}
+.infoProdata:hover{
+  background-color: #555555 ;
+  color: white;
+}
+.precio{
+  font-size: 20px;
+  background-color:#BFC9CA ;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+}
+.strong_products{
+ color: #009999;
+ font-weight: bolder;
+}
+.name_products{
+ font-weight: bolder; 
+ color: #009999;
+ font-size: 2.5rem;
+ width: 25rem;
+ }
+.contenedor_listado{
+  width:100%; 
+  height: 25rem;
+  border-color:#009999;
+  border: #009999 5px solid;
+/* border-radius: 15%;*/
+}
+.contenedor_listado:hover{
+  background-color: #bde7de;
+}
+.btnfiltrado{
+  color: #009999; 
+  background-color:black; 
+  border-radius:15px;
+  width: 85%;
+}
+#contenedor_filtros{
+  text-align: left;
+  margin-left: 3%;
+  width: 97%;
+  display: inline-block;
+}
+
+.inputsfiltro{
+  margin-top: 1%;
+  width:80%;
+  display: inline-block;
+  
+}
+.inputfilter{
+  width: 15%;
+  display: inline-block;
+}
+.inputName{
+  width: 100%;
+  display: inline-block;
+  margin-right: 1px;
+}
+#searchdiv{
+  display: inline-block;
+}
+
+#searchBar{
+  width: 30%;
+  text-align:center ;
+  margin-left: 1px;
+}
+
+#btnfiltro{
+  margin-top: 1%;
+  width: 25%;
+  text-align: right;
+  display: inline;
+  color: #009999;
+}
+.busqueda{
+  margin-top: 1%;
+  width: 20%;
+}
+#contenedor_titulo{
+  width: 100%;
+  text-align: center;
+}
+.titulo_productos{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 30px;
+ color: #009999;
+ font-weight: bolder;
+ margin-bottom: 2rem;
+}
+
+.image_product{
+  display: inline-block;
+  width: 23%;
+}
+
+.imagen_productos:hover{
+transform:scale(1.3);
+}
+
+/* .image_product:hover img{
+  transform: scale(1.2);
+} */
+.infoProdata{
+  text-align: center;
+  background-color: #bde7de;
+  font-size: 18px;
+  width: 20%;
+  margin: 1rem;
+}
+.contenedorCostSold{
+  margin-left: 35%;
+  width: 100%;
+  display: inline-block;
+}
+#contenedorProductInfo{
+  display: inline-block;
+  max-width: 100%;
+  text-align: justify;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+}
+.contenedor_listado2{
+  width:100%; 
+  height: 15rem;
+  border-color:#009999;
+  border: #009999 5px solid;
+}
+.contenedor_listado2:hover{
+  background-color: #bde7de;
+}
+
+.checked{
+  color: #009999;
+  }
+.estrellita{
+  color: #E8F6F3;
+}
+.strong_comments{
+  color: #009999;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.colordate{
+  color: #009999;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 1%;
+}
+.comentario{
+  margin-top: 2px;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+}
+.contenedorComentarios{
+  border-top: 4px double #009999;
+  border-bottom: 4px double #009999;
+  width: 100%;
+  margin-top: 1%;
+}
+.contenedorComentarios:hover{
+  background-color: #bde7de;  
+}
+.imagen_productos2{
+  background-color: #009999;
+  border-radius: 25px;
+  margin: 2%;
+  height:90% ;
+}
+.imagen_productos2:hover{
+  transform:scale(1.1);
+}
+.comentariosh4{
+  color: #009999;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.hrcomments{
+  color: #009999;
+  border: 3px dotted wheat;
+
+}
+#contenedorcomentarios{
+  margin: 2%;
+  text-align: center;
+}
+.comment{
+  margin-left: 25%;
+}
+#myComment{
+  width:28rem;
+  height:5rem;
+  text-align: justify;
+  color: #009999;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
