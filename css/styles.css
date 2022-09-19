@@ -488,7 +488,6 @@ transform:scale(1.3);
 .comentariosh4{
   color: #009999;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
   font-weight: bolder;
 }
 .hrcomments{
@@ -511,4 +510,37 @@ transform:scale(1.3);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+.contenedorRelated{
+  margin-right:5%;
+  text-align: center;
+  width: 15rem; 
+  height:15rem;
+  display:inline-flex;
+  background-color: #009999;
+ }
+.nameRelated{
+  color: wheat;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+.contenedorRelated:hover{
+  background-color: black;
+  transform:scale(1.1);
+}
 
+.dropdown-menu{
+  background-color: black;
+}
+.dropdown-item{
+  color: #009999;
+}
+.dropdown-item:hover{
+  background-color: #bde7de;
+}
+.iconCarru{
+  background-color: #555555;
+}
+.carousel{
+  background-color: #555555;
+}

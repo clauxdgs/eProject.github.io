@@ -31,7 +31,15 @@
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
-            <button class="nav-link btn-dark" id="campoUsuario"></button>
+            <div class="dropdown">
+              <button class="nav-link btn-dark dropdown-toggle" type="button" id="campoUsuario" data-bs-toggle="dropdown" aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="campoUsuario">
+                <li><a class="dropdown-item" href="cart.html">Mi Carrito</a></li>
+                <li><a class="dropdown-item" href="my-profile.html">Mi Perfil</a></li>
+                <li><a class="dropdown-item" href="index.html" onclick="limpiarPerfil()">Cerrar Sesion</a></li>
+              </ul>
+            </div>
         </li>
           <li class="nav-item">
           </li>
@@ -50,9 +58,7 @@
 
       </div>
     </div>
-    <div class="text-center p-4">
-     
-    </div>
+ 
     
     <div id="contenedorcomentarios">
       <hr class="hrcomments">
@@ -75,10 +81,16 @@
             </select>
           </div>
         </div>
-            <button onclick="myFunction()" class="btnfiltrado" style="width: 10%; margin-left:-5%;">Enviar</button>
+            <button onclick="myFunction()" class="btnfiltrado mb-5" style="width: 10%; margin-left: -5%;">Enviar</button>
          
         <hr class="hrcomments">
-      </div>
+        </div>
+        <h3 class="comentariosh4 text-center mt-3 mb-5">Productos Relacionados!</h3>
+        <div class="container text-center">
+          <div id="related">
+          </div>
+        </div>
+        <hr class="hrcomments mt-5 mb-5">
     </main>
   <footer class="text-muted">
     <div class="container">
