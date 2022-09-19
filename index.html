@@ -7,6 +7,8 @@
    <title>eMercado - Todo lo que busques está aquí</title>
   
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
@@ -48,17 +50,16 @@
                          <img src="https://cdn-icons-png.flaticon.com/512/63/63440.png" class="icono">
                       </div>
                     </div>
-                      <input type="password" class="form-control" placeholder="password" id="password"> 
+                    <input id="password" type="password" class="form-control" placeholder="Escribe tu clave">
+                    <div class="input-group-append">
+                      <button id="show_password"  class="btn btn-dark rounded" type="button" onclick="mostrarPassword();"> <span class="fa fa-eye-slash icon"></span> </button>
+                    </div>
+                    
                   </div>
                   <div class="container label_alert">
                     <label class="label_alert" id="label_pass"> Ingresa tu contraseña </label>
                   </div>
-                  <div class="custom-control custom-checkbox checkbox_login">
-                    <input type="checkbox" class="custom-control-input" id="customControlInline">
-                    <label class="custom-control-label" for="customControlInline">Recordarme</label>
-                    
-                  </div>
-                  <div class="form-group">                              
+                    <div class="form-group">                              
                     <input type="submit" class="login_btn" value="Ingresar"> 
                   </div>
 
@@ -101,6 +102,26 @@
   </footer>
  <script src="js/login.js"></script>
  <script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  function mostrarPassword(){
+      var cambio = document.getElementById("password");
+      if(cambio.type == "password"){
+        cambio.type = "text";
+        $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+      }else{
+        cambio.type = "password";
+        $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+      }
+    } 
+    
+    $(document).ready(function () {
+    //CheckBox mostrar contraseña
+    $('#ShowPassword').click(function () {
+      $('#password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+    });
+  });
+  </script>
 </body>
 
 </html>
