@@ -31,7 +31,8 @@
           </li>
           <li class="nav-item">
             <div class="dropdown">
-              <button class="nav-link btn-dark dropdown-toggle" type="button" id="campoUsuario" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="nav-link btn-dark dropdown-toggle" type="button" id="campoUsuario"
+                data-bs-toggle="dropdown" aria-expanded="false">
               </button>
               <ul class="dropdown-menu" aria-labelledby="campoUsuario">
                 <li><a class="dropdown-item" href="cart.html">Mi Carrito</a></li>
@@ -48,9 +49,103 @@
   </nav>
   <main>
     <div class="container">
-    
- 
+      <br><br>
+      <div class="contenedor_titulo">
+        <h1 class="titulo_productos"> MI CARRITO </h1>
+      </div>
+      <div class="contenedor_todo_cart">
+
+        <div class="contenedor_compras">
+          <div class="contenedor_titulo">
+            <br>
+            <h3 class="titulo_productos"> Mis Productos: </h3>
+          </div>
+          <div class="tablaCart" id="tablecart">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th class="col-2">idProduct</th>
+                  <th class="col-2">Imagen</th>
+                  <th class="col-2">Name</th>
+                  <th class="col-2">Costo</th>
+                  <th class="col-2">Cantidad</th>
+                  <th class="col-2">Subtotal</th>
+                </tr>
+              </thead>
+
+            </table>`
+          </div>
+        </div>
+
+
+      </div>
+      <div class="contenedor_todo_cart text-center">
+        <div class="contenedor_envio text-center">
+          <div class="contenedor_titulo">
+            <br>
+            <h1 class="titulo_productos"> Datos De Envio </h1>
+          </div>
+
+          <div class="container text-start envio">
+            <p class="tituloh5"> Selecciona el tipo de Envío</p>
+            <input type="radio" name="boton" value="15"> Premium hasta 72 horas (15%)<br>
+            <input type="radio" name="boton" value="7"> Express 5 - 8 días (7%)<br>
+            <input type="radio" name="boton" value="0"> Standard 12 - 15 días (gratis)<br>
+            <form class="text-center">
+              <div class="form-row text-center">
+                <div class="form-group col-md-11 text-center">
+                  <label for="inputNamedir">Nombre</label>
+                  <input type="text" class="form-control" id="inputNamedir" placeholder="Email">
+                </div>
+                <div class="form-group col-md-11 text-center">
+                  <label for="inputApellido">Apellido</label>
+                  <input type="text" class="form-control" id="inputApellido" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group col-md-11 text-center">
+                <label for="inputAddress">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group col-md-11 text-center">
+                <label for="inputAddress2">Referencias cercanas a la dirección</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="supermercado, estadio">
+              </div>
+              <div class="form-row text-center">
+                <div class="form-group col-md-11 text-center">
+                  <label for="inputCity">Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="form-group col-md-6 text-center">
+                  <label for="inputState">Departamento</label>
+                  <select name="menu" id="inputState" class="text-center">
+                    <option selected>Montevideo</option>
+                    <option>Maldonado</option>
+                    <option>Durazno</option>
+                    <option>Canelones</option>
+                    <option>Colonia</option>
+                    <option>Rivera</option>
+                    <option>Salto</option>
+                    <option>Paysandu</option>
+                    <option>Flores</option>
+                    <option>Florida</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6 text-center">
+                  <label for="inputZip">Numero de Casa</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+              <br>
+              <button type="submit" class="btn enviarbtn">Enviar</button>
+
+            </form>
+            <br>
+          </div>
+        </div>
+      </div>
     </div>
+
   </main>
   <footer class="text-muted">
     <div class="container">
