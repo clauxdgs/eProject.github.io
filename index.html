@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html lang="es">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>eMercado - Todo lo que busques está aquí</title>
-  
+  <title>eMercado - Todo lo que busques está aquí</title>
+
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -17,23 +17,23 @@
 <body id="body_login">
   <main>
     <div class="container">
-        <div class="container">
-          <div class="d-flex justify-content-center h-100">
-            <div class="user_card">
-              
-              <div class="card-header mx-auto">
-                <img src="img/login.png" alt="image login" id="imagenlogin">
-                <h3 id="inicio_login">Inicio de Sesión</h3>
-                
+      <div class="container">
+        <div class="d-flex justify-content-center h-100">
+          <div class="user_card">
+
+            <div class="card-header mx-auto">
+              <img src="img/login.png" alt="image login" id="imagenlogin">
+              <h3 id="inicio_login">Inicio de Sesión</h3>
+
               <div class="card-body">
-                  <form action="screen1.html"  id="formulario">
+                <form action="screen1.html" id="formulario">
                   <div class="container label_login">
                     <label>Usuario</label>
                   </div>
                   <div class="input-group form-group">
                     <div class="input-group-prepend">
-                       <div class="container ">
-                         <img src="https://www.pngmart.com/files/21/Account-Avatar-Profile-PNG-Pic.png" class="icono"> 
+                      <div class="container ">
+                        <img src="https://www.pngmart.com/files/21/Account-Avatar-Profile-PNG-Pic.png" class="icono">
                       </div>
                     </div>
                     <input type="text" class="form-control" placeholder="username" id="usuario">
@@ -47,42 +47,43 @@
                   <div class="input-group form-group">
                     <div class="input-group-prepend">
                       <div class="container ">
-                         <img src="https://cdn-icons-png.flaticon.com/512/63/63440.png" class="icono">
+                        <img src="https://cdn-icons-png.flaticon.com/512/63/63440.png" class="icono">
                       </div>
                     </div>
                     <input id="password" type="password" class="form-control" placeholder="Escribe tu clave">
                     <div class="input-group-append">
-                      <button id="show_password"  class="btn btn-dark rounded" type="button" onclick="mostrarPassword();"> <span class="fa fa-eye-slash icon"></span> </button>
+                      <button id="show_password" class="btn btn-dark rounded" type="button"
+                        onclick="mostrarPassword();"> <span class="fa fa-eye-slash icon"></span> </button>
                     </div>
-                    
+
                   </div>
                   <div class="container label_alert">
                     <label class="label_alert" id="label_pass"> Ingresa tu contraseña </label>
                   </div>
-                    <div class="form-group">                              
-                    <input type="submit" class="login_btn" value="Ingresar"> 
+                  <div class="form-group">
+                    <input type="submit" class="login_btn" value="Ingresar">
                   </div>
 
-              
-<!--                
+
+                  <!--                
                   <div id="g_id_onload"
                        data-client_id="800017163944-am4b22fd7theglhvbg6asgmsn4hhlm1l.apps.googleusercontent.com"
                        data-callback="handleCredentialResponse">
                   </div> -->
                   <div class="container google">
-                  <div class="g_id_signin" data-type="icon" data-theme="filled_blue" data-shape="circle">
+                    <div class="g_id_signin" data-type="icon" data-theme="filled_blue" data-shape="circle">
+                    </div>
                   </div>
-                </div>
-                    
+
                 </form>
                 <div class="card-footer">
-                <div class="d-flex justify-content-center links">
-                  No tienes una cuenta? <a href="#"> Registrate aquí </a>
+                  <div class="d-flex justify-content-center links">
+                    No tienes una cuenta? <a href="#"> Registrate aquí </a>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a href="#">Olvidaste tu contraseña?</a>
+                  </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                  <a href="#">Olvidaste tu contraseña?</a>
-                </div>
-              </div>
               </div>
             </div>
           </div>
@@ -100,27 +101,27 @@
       <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
     </div>
   </footer>
- <script src="js/login.js"></script>
- <script src="https://accounts.google.com/gsi/client" async defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-  function mostrarPassword(){
+  <script src="js/login.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function mostrarPassword() {
       var cambio = document.getElementById("password");
-      if(cambio.type == "password"){
+      if (cambio.type == "password") {
         cambio.type = "text";
         $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
-      }else{
+      } else {
         cambio.type = "password";
         $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
       }
-    } 
-    
+    }
+
     $(document).ready(function () {
-    //CheckBox mostrar contraseña
-    $('#ShowPassword').click(function () {
-      $('#password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+      //CheckBox mostrar contraseña
+      $('#ShowPassword').click(function () {
+        $('#password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+      });
     });
-  });
   </script>
 </body>
 

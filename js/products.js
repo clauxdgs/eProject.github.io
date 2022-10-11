@@ -15,7 +15,7 @@ let min = document.getElementById('inputmin');
 let max = document.getElementById('inputmax');
 let filtrar = document.getElementById('btn_filtrar');
 let limpiar = document.getElementById('btn_limpiar');
-let searchBar= document.getElementById('searchBar');
+let searchBar = document.getElementById('searchBar');
 
 
 //creo dos variables de costo minimo y maximo para ordenar de los productos
@@ -38,12 +38,12 @@ function showMessage() {
 
 
 //funcion para guardar id del producto a mostrar
-function  setProductID(id){
+function setProductID(id) {
 
-    localStorage.setItem("ProductID",id);
-    window.location.href = "product-info.html"; 
+    localStorage.setItem("ProductID", id);
+    window.location.href = "product-info.html";
     //console.log(productID);
-  }
+}
 
 //La funcion ShowCarList se encarga de hacer un recorrido por el array de autos, extrae cada auto con sus propiedades y posteriormente los listamos en un 
 function ShowCarList(array) {
@@ -62,7 +62,7 @@ function ShowCarList(array) {
 
                 htmlContentToAppend += `
                 
-                <div onclick="setProductID(`+car.id+`)" class="list-group-item list-group-item-action cursor-active contenedor_listado" >
+                <div onclick="setProductID(` + car.id + `)" class="list-group-item list-group-item-action cursor-active contenedor_listado" >
                 
                 
                 <div class="row">
@@ -104,7 +104,7 @@ function ShowCarList(array) {
 
 
 //Creamos la funcion para ordenar los productos, recive un "criterio", o sea la forma en que queremos hacer el orden;(menor a mayor, mayor a menor o por relevancia); y el array de elementos a ordenar
- 
+
 //Utilizamos la funcion Sort y la funcion anonima comparativa que btiene los costos de los objetos del array y los compara y ordena dependiendo del criterio!
 
 //info sacada del siguiente lin: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
@@ -113,29 +113,30 @@ function ordenarProductos(criterio, array) {
     console.log(array);
 
     let arrayOrdenado = [];
-//para ordenar de forma ascendente leemos los datos de costo de cada uno de los productos y los ordenamos de mayor a menor
+    //para ordenar de forma ascendente leemos los datos de costo de cada uno de los productos y los ordenamos de mayor a menor
 
     if (criterio === OPD) {
         arrayOrdenado = array.sort(function (dato1, dato2) {
-          return dato1.cost - dato2.cost;
+            return dato1.cost - dato2.cost;
         });
-    
+
     } //para ordenar por costo ascendente obtenemos el costo de los objetos con .cost y los ordenamos de menor a mayor 
     else if (criterio === OPA) {
 
         arrayOrdenado = array.sort(function (dato1, dato2) {
-          return dato2.cost - dato1.cost;
+            return dato2.cost - dato1.cost;
         });
-        
-    } 
-     //para el orden por relevancia lo que hacemos es obtener la cantidad de unidades vendidas de los productos usando el .souldCount y los comparamos para ordenar de mayor cantidad de vendidos a menor cantidad de vendidos
-     else if (criterio === OPR) {
+
+    }
+    //para el orden por relevancia lo que hacemos es obtener la cantidad de unidades vendidas de los productos usando el .souldCount y los comparamos para ordenar de mayor cantidad de vendidos a menor cantidad de vendidos
+    else if (criterio === OPR) {
         arrayOrdenado = array.sort(function (dato1, dato2) {
-                    return dato2.soldCount - dato1.soldCount;})
+            return dato2.soldCount - dato1.soldCount;
+        })
     }
     ShowCarList(arrayOrdenado);
-  
-    
+
+
 }
 
 
@@ -152,10 +153,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     if (cat == 101) {
         url = AUTOS_URL;
-       
+
     } else if (cat == 102) {
         url = JUGUETES_URL;
-    
+
     } else if (cat == 103) {
         url = MUEBLES_URL;
 
@@ -174,17 +175,17 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     } else if (cat == 108) {
         url = DEPORTE_URL;
-        
+
     } else {
         url = CELULARES_URL;
     }
-    
+
     getJSONData(url).then(function (resultObj) {
         if (resultObj.status === "ok") {
             car_Array = resultObj.data.products;
             ShowCarList(car_Array);
-            let catname= resultObj.data;
-            document.getElementById('labelcat').innerHTML= catname.catName;
+            let catname = resultObj.data;
+            document.getElementById('labelcat').innerHTML = catname.catName;
 
         }
     });
@@ -233,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         } else {
             maxCost = undefined;
         }
-           ShowCarList(car_Array);
+        ShowCarList(car_Array);
     };
 });
 
@@ -245,10 +246,10 @@ empezamos a escribir en la casilla de busqueda gracias a keyup*/
 
 searchBar.addEventListener('keyup', (e) => {
     /*Para que el filtro no falle trabajamos convirtiendo la busqueda y los objetos encontrados en minusculas */
-    const busqueda= e.target.value.toLowerCase();
+    const busqueda = e.target.value.toLowerCase();
     //console.log(busqueda);
     /* filtramos los objetos del array de autos viendo si incluyen lo que escribimos en el input searchBar */
-    const objetosFiltrados= car_Array.filter(objeto => {
+    const objetosFiltrados = car_Array.filter(objeto => {
         /* nos retorna los objetos del array de autos que incluyan las palabras escritas en el nombre o en la descripcion del producto */
         return objeto.name.toLowerCase().includes(busqueda) || objeto.description.toLowerCase().includes(busqueda);
     });
