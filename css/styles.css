@@ -700,6 +700,7 @@ th {
   width: fit-content;
   text-align: center;
   border: 2px solid #009999;
+  border-radius: 25%;
 }
 
 .btncomprar:hover,
@@ -742,4 +743,9 @@ th {
 background-color: #bde7de;
 border-color: #bde7de;
 
+}
+.divcategories:hover{
+  background-color: #383737;
+  color: #009999;
+  border: 5px solid #009999;
 }
