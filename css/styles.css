@@ -688,6 +688,7 @@ th {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 1px;
+  text-align: center;
 
 }
 
@@ -722,6 +723,23 @@ th {
 }
 
 .cant {
-
   margin-left: -5%;
+}
+.nameinfo{
+  width: 45.5%;
+  display: inline-block;
+}
+.divenvio{
+  margin-top: 2%;
+}
+.nameinfo2{
+  align-items: center;
+  width: 23%;
+  display: inline-block;
+}
+
+#basurero{
+width: 100%;
+height: 100%;
+
 }

@@ -32,13 +32,14 @@ function showCart(array) {
                </thead>
                <tbody>
                <tr>
-                    <th scope="row">${element.id}</th>
+                 
                     <td class="col-2"><image src="img/prod${element.id}_1.jpg" class="imgtable"></image></td>
                     <td class="col-2">${element.name}</td>
                     <td class="col-2">${element.unitCost} ${element.currency}</td>
                     <td class="col-2">
                     <input id="cantidad${element.id}" class="quantity cant col-5 text-center" min="1" max="999" name="quantity" value="${element.count}" type="number" onchange="calcSubtotal(${element.id},${element.unitCost})"> </td>
                     <td class="col-2"><strong> ${element.currency} <label id="subtotal${element.id}">${element.unitCost*element.count} </label> </strong></td>
+                    <td class="col-2"> Eliminar </td>
                </tr>
                </tbody>
           </table>`
@@ -57,13 +58,14 @@ function showProduct(array) {
                </tr>
                </thead>
                <tbody>
-                    <th scope="row">${array.id}</th>
+                  
                     <td class="col-2"><image  src="img/prod${array.id}_1.jpg" class="imgtable"></image></td>
                     <td class="col-2">${array.name}</td>
                     <td  class="co-2">${array.cost} ${array.currency}</td>
                     <td class="col-2">
                     <input id="cantidad${array.id}" class="quantity col-5 text-center" min="1" max="999" name="quantity" value="${count}" type="number" onchange="calcSubtotal(${array.id},${array.cost})"></td>
                     <td class="col-2"><strong> ${array.currency} <label id="subtotal${array.id}">${array.cost*count} </label> </strong></td>
+                    <td class="col-2"> ELiminar </td>
                </tr>
                </tbody>
           </table>`

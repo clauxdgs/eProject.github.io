@@ -64,12 +64,16 @@
             <table class="table">
               <thead class="thead-dark">
                 <tr>
-                  <th class="col-2">idProduct</th>
+                  <!-- <th class="col-2">idProduct</th>  para JS    <th scope="row">${element.id}</th> -->
                   <th class="col-2">Imagen</th>
                   <th class="col-2">Name</th>
                   <th class="col-2">Costo</th>
                   <th class="col-2">Cantidad</th>
                   <th class="col-2">Subtotal</th>
+                  <th class="col-2">
+                    <button> Eliminar
+                     
+                    </button></th>
                 </tr>
               </thead>
 
@@ -93,47 +97,52 @@
             <input type="radio" name="boton" value="0"> Standard 12 - 15 días (gratis)<br>
             <form class="text-center">
               <div class="form-row text-center">
-                <div class="form-group col-md-11 text-center">
-                  <label for="inputNamedir">Nombre</label>
-                  <input type="text" class="form-control" id="inputNamedir" placeholder="Email">
+                <div class="form-group col-md-12 text-start">
+                  <div class="form-group nameinfo text-center divenvio">
+                    <label for="inputNamedir">Nombre</label>
+                    <input type="text" class="form-control" id="inputNamedir" placeholder="Nombre">
+                  </div>
+                  <div class="form-group text-center nameinfo divenvio">
+                    <label for="inputApellido">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                  </div>
                 </div>
-                <div class="form-group col-md-11 text-center">
-                  <label for="inputApellido">Apellido</label>
-                  <input type="text" class="form-control" id="inputApellido" placeholder="Password">
-                </div>
+
               </div>
-              <div class="form-group col-md-11 text-center">
+              <div class="form-group col-md-11 text-center divenvio">
                 <label for="inputAddress">Dirección</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
               </div>
-              <div class="form-group col-md-11 text-center">
+              <div class="form-group col-md-11 text-center divenvio">
                 <label for="inputAddress2">Referencias cercanas a la dirección</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="supermercado, estadio">
               </div>
-              <div class="form-row text-center">
-                <div class="form-group col-md-11 text-center">
-                  <label for="inputCity">Ciudad</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
 
-                <div class="form-group col-md-6 text-center">
-                  <label for="inputState">Departamento</label>
-                  <select name="menu" id="inputState" class="text-center">
-                    <option selected>Montevideo</option>
-                    <option>Maldonado</option>
-                    <option>Durazno</option>
-                    <option>Canelones</option>
-                    <option>Colonia</option>
-                    <option>Rivera</option>
-                    <option>Salto</option>
-                    <option>Paysandu</option>
-                    <option>Flores</option>
-                    <option>Florida</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-6 text-center">
-                  <label for="inputZip">Numero de Casa</label>
-                  <input type="text" class="form-control" id="inputZip">
+              <div class="form-group col-md-12 text-start">
+                <div class="form-row text-center divenvio">
+                  <div class="form-group nameinfo2 text-center">
+                    <label for="inputCity">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group nameinfo2 text-center divenvio">
+                    <label for="inputState">Departamento</label>
+                    <select name="menu" id="inputState" class="text-center">
+                      <option selected>Montevideo</option>
+                      <option>Maldonado</option>
+                      <option>Durazno</option>
+                      <option>Canelones</option>
+                      <option>Colonia</option>
+                      <option>Rivera</option>
+                      <option>Salto</option>
+                      <option>Paysandu</option>
+                      <option>Flores</option>
+                      <option>Florida</option>
+                    </select>
+                  </div>
+                  <div class="form-group nameinfo2 text-center divenvio">
+                    <label for="inputZip">Numero de Casa</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
                 </div>
               </div>
               <br>
