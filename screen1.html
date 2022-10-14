@@ -21,13 +21,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-100 justify-content-between">
           <li class="nav-item">
-            <a class="nav-link active" href="screen1.html">Inicio</a>
+            <a class="nav-link active" href="screen1.html"> Volver al Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="categories.html">Categorías</a>
+            <a class="nav-link" href="categories.html"> Ver Categorías</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sell.html">Vender</a>
+            <a class="nav-link" href="sell.html">Vender Un producto</a>
           </li>
           <li class="nav-item">
             <div class="dropdown">
@@ -49,12 +49,82 @@
   </nav>
   <main>
     <div class="jumbotron text-center"></div>
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide divcarru" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/cat101_1.jpg" class="d-block imagecarruport" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Etiqueta de la primera diapositiva</h5>
+              <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/cat102_1.jpg" class="d-block imagecarruport" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Etiqueta de la tercera diapositiva</h5>
+              <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/cat103_1.jpg" class="d-block imagecarruport" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Etiqueta de la segunda diapositiva</h5>
+              <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/cat104_1.jpg" class="d-block imagecarruport" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Etiqueta de la tercera diapositiva</h5>
+              <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/cat105_1.jpg" class="d-block imagecarruport" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Etiqueta de la tercera diapositiva</h5>
+              <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+            </div>
+          </div>
+           <div class="carousel-item">
+             <img src="img/cat106_1.jpg" class="d-block imagecarruport" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Etiqueta de la tercera diapositiva</h5>
+               <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+             </div>
+           </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
       <div class="container">
+        <h1 class="tituloGrande"> ALGUNAS SUGERENCIAS PARA TI: </h1>
         <div class="row">
           <div class="col-md-4 ">
             <div class="card mb-4 shadow-sm custom-card cursor-active divcategories" id="autos">
-              <img class="bd-placeholder-img card-img-top" src="img/cars_index.jpg"
+              <img class="bd-placeholder-img card-img-top imgscreen1" src="img/cars_index.jpg"
                 alt="Imgagen representativa de la categoría 'Autos'">
               <h3 class="m-3">Autos</h3>
               <div class="card-body">
@@ -64,7 +134,7 @@
           </div>
           <div class="col-md-4 ">
             <div class="card mb-4 shadow-sm custom-card cursor-active divcategories" id="juguetes">
-              <img class="bd-placeholder-img card-img-top" src="img/toys_index.jpg"
+              <img class="bd-placeholder-img card-img-top imgscreen1" src="img/toys_index.jpg"
                 alt="Imgagen representativa de la categoría 'Juguetes'">
               <h3 class="m-3">Juguetes</h3>
               <div class="card-body">
@@ -74,7 +144,7 @@
           </div>
           <div class="col-md-4 ">
             <div class="card mb-4 shadow-sm custom-card cursor-active divcategories" id="muebles">
-              <img class="bd-placeholder-img card-img-top" src="img/furniture_index.jpg"
+              <img class="bd-placeholder-img card-img-top imgscreen1" src="img/furniture_index.jpg"
                 alt="Imgagen representativa de la categoría 'Muebles'">
               <h3 class="m-3">Muebles</h3>
               <div class="card-body">
@@ -84,12 +154,13 @@
           </div>
         </div>
         <div class="row">
-          <a class="btn btn-light btn-lg btn-block" href="categories.html">Y mucho más!</a>
+          <p class="titulo_productos"> Y mucho más! presiona <a class="btn-lg linka" href="categories.html">aquí</a>
+            para ver todas las categorías de productos!</p>
         </div>
       </div>
     </div>
   </main>
-  <footer class="text-muted">
+  <footer class="bg-dark text-light">
     <div class="container">
       <p class="float-end">
         <a href="#">Volver arriba</a>

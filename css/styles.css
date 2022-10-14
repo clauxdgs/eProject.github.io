@@ -8,6 +8,9 @@
 .jumbotron .display-4 {
   font-weight: bold;
 }
+body{
+  background-color: #FEF3BB;
+}
 
 nav a {
   text-decoration: none;
@@ -34,11 +37,25 @@ nav a {
   margin-bottom: 0;
   background-color: #53C0FB;
   background: url('../img/cover_back.png');
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: black;
   font-weight: bold;
+} 
+.divcarru{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.imagecarruport{
+  margin-left: 30%;
+  width: 40%;
+  height: 20%;
+  border-radius: 15%;
+
 }
 
 @media (min-width: 768px) {
@@ -749,3 +766,40 @@ border-color: #bde7de;
   color: #009999;
   border: 5px solid #009999;
 }
+.divcategories{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:#009999;
+  border: 5px solid #383737;
+  border-radius: 20%;
+  align-items: center;
+  text-align: center;
+  font-weight: 900;
+  display: inline-flexbox;
+
+}
+
+.imgscreen1{
+width: 80%;
+border-radius: 15%;
+margin:auto;
+margin-top: 5%;
+border: 5px solid #555555;
+}
+.tituloGrande{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: #ff0cd2;
+  text-align: center;
+  margin-bottom: 2%;
+  text-shadow: #009999 1px 0 10px;
+}
+.linka{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #f90ca2;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+} 
