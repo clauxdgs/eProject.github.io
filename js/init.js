@@ -25,14 +25,9 @@ let productID = localStorage.getItem("ProductID");
 const PRODUCTS_URL = `https://japceibal.github.io/emercado-api/cats_products/${lala}.json`;
 
 //obtengo el ID del producto y lo concateno al product_info_url y al Comments_URL
-
-
 const PRODUCT_INFO_URL = `https://japceibal.github.io/emercado-api/products/${productID}.json`;
 
-
 const PRODUCT_INFO_COMMENTS_URL = `https://japceibal.github.io/emercado-api/products_comments/${productID}.json`;
-
-
 
 const CART_INFO_URL = "https://japceibal.github.io/emercado-api/user_cart/25801.json";
 const CART_BUY_URL = "https://japceibal.github.io/emercado-api/cart/buy.json";
