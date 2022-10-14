@@ -103,10 +103,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
                     console.log(array_comprados)
                     showProduct(array_comprados);
-
                }
-
-
           });
 
 
