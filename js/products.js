@@ -62,14 +62,10 @@ function ShowCarList(array) {
 
                 htmlContentToAppend += `
                 
-                <div onclick="setProductID(` + car.id + `)" class="list-group-item list-group-item-action cursor-active contenedor_listado" >
-                
-                
-                <div class="row">
-                
-                 
-                    <div class="col-10">
-                        <div class="d-flex w-100 justify-content-between" id="divContenido">
+                <div onclick="setProductID(` + car.id + `)" class="list-group-item list-group-item-action cursor-active contenedor_listado col 10" >
+                <div class="row col-4">
+                    <div>
+                        <div class="d-flex w-100 justify-content-between col-4" id="divContenido">
                         
                             <div class="mb-1 info_products" style="margin:25px; margin-left: 70px;">
                             
@@ -80,11 +76,11 @@ function ShowCarList(array) {
                             <p class="precio"><strong class="strong_products">Precio: </strong> ` + car.cost + '  <strong class="strong_products">' + car.currency + `</strong>
                             <div>
                              <label style="font-weight:bolder; background-color:rgb(225, 225, 225); border-radius:5px; width: 25%; text-align: center;"><strong style="color: #009999;">VENDIDOS:</strong>` + car.soldCount + `</label></p>
-                            </div> </p >
+                            </div> </p>
                             </div>
                           
-                            <div class="col-3" style="width :45%; aling-items:center;">
-                            <img src="` + car.image + `" alt="product image"  class="img-thumbnail imagen_productos"  id="image_car">
+                            <div class="col-4" style="width :100%; aling-items:center;">
+                            <img src="` + car.image + `" alt="product image"  class="imagen_productos"  id="image_car">
                             </div>
                            
                         </div>
