@@ -101,7 +101,7 @@
      <div id="contenedorProductInfo" class="list-group-item list-group-item-action cursor-active">
                <div class="row">
                <div>
-               <button onclick="addtocart(` + idprocut + `)" id="btncomprar" class="btncomprar">Comprar</button>
+               <button onclick="addtocart(`+ idprocut +`)" id="btncomprar" class="btncomprar">Comprar</button>
                </div>
                     <div>
                         <div style="width:100%">
