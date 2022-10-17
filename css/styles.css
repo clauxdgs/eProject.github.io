@@ -809,6 +809,24 @@ th {
 
 }
 
+.linka2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #009999 !important;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.linka2:hover {
+ color: #f90ca2 !important;
+ text-decoration: none;
+}
+
 .h5img {
   color: #fbdf51;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

@@ -7,7 +7,12 @@ let arrayCartProducts = [];
 let objetoscomprados = [];
 let arraylink = [];
 
+let costoProducts= document.getElementById("costoProducts");
+let costoEnvio = document.getElementById("costoEnvio");
+let costoTotal = document.getElementById("costoTotal");
+
 //console.log(objetoscomprados)
+
 
 function calcSubtotal(id, cost) {
      let cant = parseInt(document.getElementById(`cantidad${id}`).value);
