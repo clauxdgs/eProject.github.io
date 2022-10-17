@@ -967,8 +967,14 @@ th {
 
 .tablacostos {
   margin-left: -5%;
-  background-color: #bde7de;
-  border: #000000;
-  text-align: center;
+  background-color: #FEF3BB;
+  border: 2px solid #009999;
+  text-align: justify;
   align-items: center;
+  font-size: 18px;
 }
+.tablacostos p{
+   text-align: justify;
+   align-items: center;
+   font-size: 18px;
+   }
