@@ -42,7 +42,7 @@ function showCart(array) {
                     <td class="col-2">${element.name}</td>
                     <td class="col-2">${element.unitCost} ${element.currency}</td>
                     <td class="col-2">
-                    <input id="cantidad${element.id}" class="quantity cant col-5 text-center" min="1" max="999" name="quantity" value="${element.count}" type="number" onchange="calcSubtotal(${element.id},${element.unitCost})"> </td>
+                    <input id="cantidad${element.id}" class="quantity cant col-5 text-center" min="1" max="999999" name="quantity" value="${element.count}" type="number" onchange="calcSubtotal(${element.id},${element.unitCost})"> </td>
                     <td class="col-2"><strong> ${element.currency} <label id="subtotal${element.id}">${element.unitCost*element.count} </label> </strong></td>
                     <td class="col-2"> Eliminar </td>
                </tr>
@@ -68,9 +68,14 @@ function showProduct(array) {
                     <td class="col-2">${array.name}</td>
                     <td  class="co-2">${array.cost} ${array.currency}</td>
                     <td class="col-2">
-                    <input id="cantidad${array.id}" class="quantity col-5 text-center" min="" max="999" name="quantity" value="${count}" type="number" onchange="calcSubtotal(${array.id},${array.cost})"></td>
+                    <input id="cantidad${array.id}" class="quantity col-5 text-center" min="" max="999999" name="quantity" value="${count}" type="number" onchange="calcSubtotal(${array.id},${array.cost})"></td>
                     <td class="col-2"><strong> ${array.currency} <label id="subtotal${array.id}">${array.cost*count} </label> </strong></td>
-                    <td class="col-2"> ELiminar </td>
+                    <td class="col-2">
+                     <button> 
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewbox="0 0 16 16"><path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                     </svg>
+                     </button>
+                    </td>
                </tr>
                </tbody>
           </table>`
