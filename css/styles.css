@@ -823,8 +823,8 @@ th {
 }
 
 .linka2:hover {
- color: #f90ca2 !important;
- text-decoration: none;
+  color: #f90ca2 !important;
+  text-decoration: none;
 }
 
 .h5img {
@@ -973,8 +973,15 @@ th {
   align-items: center;
   font-size: 18px;
 }
-.tablacostos p{
-   text-align: justify;
-   align-items: center;
-   font-size: 18px;
-   }
+
+.tablacostos p {
+  text-align: justify;
+  align-items: center;
+  font-size: 18px;
+}
+
+.textstyle2 {
+  color: #009999;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}

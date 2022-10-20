@@ -6,6 +6,10 @@ let array_comprados = [];
 let arrayCartProducts = [];
 let objetoscomprados = [];
 let arraylink = [];
+let allProductCost=0;
+let deliveryCost = 0;
+let totalcost =0;
+let productsCost = [];
 
 let costoProducts= document.getElementById("costoProducts");
 let costoEnvio = document.getElementById("costoEnvio");
@@ -20,7 +24,24 @@ function calcSubtotal(id, cost) {
      //console.log(cost);
      let subt = cant * cost;
      document.getElementById(`subtotal${id}`).innerHTML = subt;
+     totalCOST();
+   
+}
 
+function totalCOST(){
+
+     objetoscomprados = JSON.parse(localStorage.getItem('product'));
+     console.log(objetoscomprados)
+     for(let i=0;i<objetoscomprados.length;i++){
+          let idproductoC = objetoscomprados[i];
+          console.log(idproductoC);
+          // let subtotales = [];
+          // let subtotal = document.getElementById(`subtotal`+idproducto+``).value;
+          // subtotales.push(subtotal);
+          let subtotalname= `subtotal${idproductoC}`;
+          console.log(document.getElementById(subtotalname))
+     }
+     
 
 }
 
@@ -59,7 +80,7 @@ function showCart(array) {
 }
 
 function showProduct(array) {
-     console.log(array)
+    // console.log(array)
      tabla.innerHTML += `
           <table class="table">
                <thead class="thead-dark">
@@ -96,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                cart_array = resultObj.data.articles;
                // console.log(cart_array)
                showCart(cart_array);
+               totalCOST();
 
           }
      });
@@ -116,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                if (resultObj.status === "ok") {
                     array_comprados = resultObj.data;
 
-                    console.log(array_comprados)
+                   // console.log(array_comprados)
                     showProduct(array_comprados);
                }
           });
