@@ -124,7 +124,7 @@ function showProduct(array) {
                     <td class="col-2">${array.name}</td>
                     <td  class="co-2">${costo} ${array.currency}</td>
                     <td class="col-2">
-                    <input id="cantidad${array.id}" class="quantity col-5 text-center" min="" max="999999" name="quantity" value="${count}" type="number" onchange="calcSubtotal(${array.id},${costo})"></td>
+                    <input id="cantidad${array.id}" class="quantity col-5 text-center" min="1" max="999999" name="quantity" value="${count}" type="number" onchange="calcSubtotal(${array.id},${costo})"></td>
                     <td class="col-2"><strong> USD <label id="subtotal${array.id}" class="subtotales">${costo*count} </label> </strong></td>
                     <td class="col-2">
                      <button> 
