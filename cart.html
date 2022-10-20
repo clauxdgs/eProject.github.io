@@ -114,14 +114,44 @@
                 <path
                   d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
               </svg></h1>
+              
 
           </div>
 
           <div class="container text-start envio">
             <p class="tituloh5"> Selecciona el tipo de Envío</p>
-            <input type="radio" name="boton" value="15"> Premium te llega hasta en 72 horas (15%)<br>
-            <input type="radio" name="boton" value="7"> Express te llega entre 5 a 8 días (7%)<br>
-            <input type="radio" name="boton" value="0"> Standard te llega en hasta 15 días (gratis)<br>
+            <br>
+           <div class="btn-group btn-group-toggle w-50" data-toggle="buttons" id="divRadioEnvio">
+             <label class="btn btn-success">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-truck-flatbed" viewbox="0 0 16 16">
+                <path
+                  d="M11.5 4a.5.5 0 0 1 .5.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-4 0 1 1 0 0 1-1-1v-1h11V4.5a.5.5 0 0 1 .5-.5zM3 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1.732 0h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4a2 2 0 0 1 1.732 1z" />
+              </svg>
+               <input type="radio" name="tipoEnvio" id="option1" value="15" checked> Premium
+             </label>
+             <label class="btn btn-success">
+               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-truck"
+                 viewbox="0 0 16 16">
+                 <path
+                   d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+               </svg>
+               <input type="radio" name="tipoEnvio" id="option2" value="7"> Express
+             </label>
+             <label class="btn btn-success">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck"
+               viewbox="0 0 16 16">
+               <path
+                 d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+             </svg>
+               <input type="radio" name="tipoEnvio" id="option3" value="5"> Standard
+             </label>
+           </div>
+           <div>
+            <br>
+             <p id="shippingText" class="textstyle3">El Costo de envio será del 15% del total de tu compra!</p>
+           </div>
+           <br>
             <form class="text-center">
               <div class="form-row text-center">
                 <div class="form-group col-md-12 text-start">
@@ -184,17 +214,19 @@
                       <h5 class="text-start">Subtotal</h5>
                       <p>Costo total de tu pedido en dólares $us</p>
                     </th>
-                    <td id="costoProducts" class="text-end">0 $us</td>
+                    <td class="text-end"><span>USD </span><span id="costoProducts"></span> </td>
 
                   </tr>
                   <tr>
                     <th class="col-6">Costo de Envío</th>
-                    <td id="costoEnvio" class="text-end">0 $us</td>
+                    <td class="text-end"><span>USD </span>
+                      <span id="costoEnvio">0</span>
+                    </td>
 
                   </tr>
                   <tr>
                     <th class="col-6">Total</th>
-                    <td id="costoTotal" class="text-end">0 $us </td>
+                    <td class="text-end"><span>USD </span><span id="costoTotal">0</span></td>
 
                   </tr>
                 </tbody>
@@ -293,6 +325,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/cart.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </body>
 
 </html>
