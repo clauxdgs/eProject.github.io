@@ -6,42 +6,72 @@ let array_comprados = [];
 let arrayCartProducts = [];
 let objetoscomprados = [];
 let arraylink = [];
-let allProductCost=0;
+let allProductCost = 0;
 let deliveryCost = 0;
-let totalcost =0;
+let totalcost = 0;
 let productsCost = [];
 let costo;
+let envioCost;
 
-let costoProducts= document.getElementById("costoProducts");
+let costoProducts = document.getElementById("costoProducts");
 let costoEnvio = document.getElementById("costoEnvio");
 let costoTotal = document.getElementById("costoTotal");
+let parrafoEnvio = document.getElementById("shippingText");
+//console.log(parrafoEnvio)
 
 //console.log(objetoscomprados)
 
 
 
 function tipoEnvio() {
-     $("input[name='tipoEnvio']").on('change', function (a) {
-          let costoEnvio = $("input[name='tipoEnvio']:checked").val();
-         // console.log(costoEnvio);
-          $("#shippingText").empty();
-          $("#shippingText").append("El Costo de envio sera del " + costoEnvio + "% del total de tu compra!");
-     });
-}
-function shippingCost(){
-     let totalproductos = parseInt(costoProducts.innerHTML);
-     //  console.log(totalproductos);
-     let shipping=0;
+     let tipoEnvios = document.getElementsByName("tipoEnvio");
+     //console.log(tipoEnvios);
 
-     shipping=$("input[name='tipoEnvio']:checked").val();
-     let costshipping= (shipping/100)*totalproductos;
-     
-     costoEnvio.innerHTML= Math.round(costshipping);
-    
-    let costototal = totalproductos+costshipping;
-    costoTotal.innerHTML=Math.round(costototal);
-    //console.log(costototal);
+     for (let i = 0; i < tipoEnvios.length; i++) {
+          let clasedeenvio = tipoEnvios[i];
+
+          //console.log(clasedeenvio);
+          if (clasedeenvio.checked) {
+               envioCost = clasedeenvio.value;
+               //  console.log(envioCost)
+          }
+
+     }
+     parrafoEnvio.innerHTML = `El costo de envio sera del ` + envioCost + `% del total de tu compra!`;
+     let totalproductos = parseInt(costoProducts.innerHTML);
+     //console.log(totalproductos);
+    let costshipping = Math.round((envioCost/100)*totalproductos);
+    costoEnvio.innerHTML = costshipping;
+    console.log(costshipping);
+    let costoFinal =Math.round(totalproductos+costshipping);
+    costoTotal.innerHTML=costoFinal;
+
+     //Metodo de para encontrar el tipo de envio elegido con JQUERY
+     // $("input[name='tipoEnvio']").on('change', function (a) {
+     //      let costoEnvio = $("input[name='tipoEnvio']:checked").val();
+     //     // console.log(costoEnvio);
+     //      $("#shippingText").empty();
+     //      $("#shippingText").append("El Costo de envio sera del " + costoEnvio + "% del total de tu compra!");
+     // });
+
+//Metodo para el calculo del costo de envio y Costo Total con Jquery
+     //   let totalproductos = parseInt(costoProducts.innerHTML);
+        //       //console.log(totalproductos);
+        //       console.log(envioCost);
+        //      let shipping=0;
+        //      shipping;
+
+        // //      shipping=$("input[name='tipoEnvio']:checked").val();
+        // //      let costshipping= (shipping/100)*totalproductos;
+
+        // //      costoEnvio.innerHTML= Math.round(costshipping);
+
+        // //     let costototal = totalproductos+costshipping;
+        // //     costoTotal.innerHTML=Math.round(costototal);
+        // //     //console.log(costototal);
 }
+
+
 
 function totalCOST() {
      let subtotales = document.getElementsByClassName("subtotales");
@@ -49,9 +79,8 @@ function totalCOST() {
      for (let i = 0; i < subtotales.length; i++) {
           suma += parseInt(subtotales[i].innerHTML);
      }
-    costoProducts.innerHTML = suma;
-    shippingCost();
-    tipoEnvio();
+     costoProducts.innerHTML = suma;
+     tipoEnvio();
 }
 
 function calcSubtotal(id, cost) {
@@ -98,20 +127,20 @@ function showCart(array) {
           </table>`
 
      }
-       totalCOST();
+     totalCOST();
 
 }
 
 function showProduct(array) {
-    // console.log(array)
-    if(array.currency=="UYU"){
-     costo = Math.round(array.cost / 40);
-    // console.log(costo);
-    } else{
-     costo = Math.round(array.cost);
-      // console.log(costo);
-    }
- 
+     // console.log(array)
+     if (array.currency == "UYU") {
+          costo = Math.round(array.cost / 40);
+          // console.log(costo);
+     } else {
+          costo = Math.round(array.cost);
+          // console.log(costo);
+     }
+
      tabla.innerHTML += `
           <table class="table">
                <thead class="thead-dark">
@@ -136,7 +165,7 @@ function showProduct(array) {
                </tr>
                </tbody>
           </table>`
-totalCOST();
+     totalCOST();
 
 }
 
@@ -149,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                cart_array = resultObj.data.articles;
                // console.log(cart_array)
                showCart(cart_array);
-             
+
 
           }
      });
@@ -170,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                if (resultObj.status === "ok") {
                     array_comprados = resultObj.data;
 
-                   // console.log(array_comprados)
+                    // console.log(array_comprados)
                     showProduct(array_comprados);
                }
           });
