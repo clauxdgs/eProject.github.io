@@ -62,7 +62,7 @@ function ShowCarList(array) {
 
                 htmlContentToAppend += `
                 
-                <div onclick="setProductID(` + car.id + `)" class="list-group-item list-group-item-action cursor-active contenedor_listado col " >
+                <div onclick="setProductID(` + car.id + `)" class="list-group-item list-group-item-action cursor-active contenedor_listado col w-100" >
                 <div class="row col-6">
                     <div>
                         <div class="d-flex w-100 justify-content-between col-12" id="divContenido">
