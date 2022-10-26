@@ -65,16 +65,16 @@
   </nav>
   <div class="container">
     <div class="text-center p-4">
-      <h2>Vender</h2>
-      <p class="lead">Ingresa los datos del artículo a vender.</p>
+      <h2 class="titulo_productos">Vender</h2>
+      <p class="lead tituloh5 text-center">Ingresa los datos del artículo a vender.</p>
     </div>
     <div class="row justify-content-md-center">
       <div class="col-md-8 order-md-1">
-        <h4 class="mb-3">Información del producto</h4>
+        <h4 class="mb-3 titulo_productos">Información del producto</h4>
         <form class="needs-validation" id="sell-info">
           <div class="row">
             <div class="col-md-6 mb-3">
-              <label for="productName">Nombre</label>
+              <label for="productName" class="tituloh5">Nombre</label>
               <input type="text" class="form-control" id="productName" value="" name="productName">
               <div class="invalid-feedback">
                 Ingresa un nombre
@@ -83,23 +83,23 @@
           </div>
           <div class="row">
             <div class="col-md-8 order-md-1">
-              <label>Imágenes</label>
+              <label class="tituloh5">Imágenes</label>
               <div class="needsclick dz-clickable" id="file-upload">
-                <div class="dz-message needsclick">
-                  Arrastra tus fotos aquí<br>
+                <div class="dz-message needsclick textstyle2">
+                  Arrastra las fotos aquí<br>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 mb-3">
-              <label for="productDescription">Descripción</label>
+              <label for="productDescription" class="tituloh5">Descripción</label>
               <textarea name="productDescription" class="form-control" id="productDescription"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="col-md-3 mb-3">
-              <label for="productCostInput">Costo</label>
+              <label for="productCostInput" class="tituloh5">Costo</label>
               <input type="number" name="productCostInput" class="form-control" id="productCostInput" placeholder=""
                 required="" value="0" min="0">
               <div class="invalid-feedback">
@@ -107,7 +107,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <label for="productCurrency">Moneda</label>
+              <label for="productCurrency" class="tituloh5">Moneda</label>
               <select name="productCurrency" class="form-select custom-select d-block w-100" id="productCurrency"
                 required>
                 <option value="" hidden selected>Seleccionar moneda</option>
@@ -121,9 +121,9 @@
           </div>
           <div class="row">
             <div class="col-md-7 mb-3">
-              <label for="productCategory">Categoría</label>
+              <label for="productCategory" class="tituloh5">Categoría</label>
               <select name="productCategory" class="custom-select form-select d-block w-100" id="productCategory">
-                <option value="">Elija la categoría...</option>
+                <option value="" class="tituloh5">Elija la categoría...</option>
                 <option>Autos</option>
                 <option>Juguetes</option>
                 <option>Muebles</option>
@@ -138,7 +138,7 @@
           </div>
           <div class="row">
             <div class="col-md-3 mb-3">
-              <label for="productCountInput">Cantidad en stock</label>
+              <label for="productCountInput" class="tituloh5">Cantidad en stock</label>
               <input type="number" name="productCountInput" class="form-control" id="productCountInput" required
                 value="1" min="0">
               <div class="invalid-feedback">
@@ -147,7 +147,7 @@
             </div>
           </div>
           <hr class="mb-4">
-          <h5 class="mb-3">Tipo de publicación</h5>
+          <h5 class="mb-3 tituloh5">Tipo de publicación</h5>
           <div class="d-block my-3">
             <div class="custom-control custom-radio">
               <input id="goldradio" name="publicationType" type="radio" class="custom-control-input" checked=""
@@ -169,24 +169,24 @@
             </div>
           </div>
           <hr class="mb-4">
-          <h4 class="mb-3">Costos</h4>
+          <h4 class="mb-3 tituloh5">Costos</h4>
           <ul class="list-group mb-3">
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div>
-                <h6 class="my-0">Precio</h6>
-                <small class="text-muted">Unitario del producto</small>
+                <h6 class="my-0 tituloh5">Precio</h6>
+                <small class="text-muted tituloh5">Unitario del producto</small>
               </div>
               <span class="text-muted" id="productCostText">-</span>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div>
-                <h6 class="my-0">Porcentaje</h6>
-                <small class="text-muted">Según el tipo de publicación</small>
+                <h6 class="my-0 tituloh5">Porcentaje</h6>
+                <small class="text-muted tituloh5">Según el tipo de publicación</small>
               </div>
               <span class="text-muted" id="comissionText">-</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
-              <span>Total ($)</span>
+              <span class="tituloh5">Total ($)</span>
               <strong id="totalCostText">-</strong>
             </li>
           </ul>

@@ -12,7 +12,7 @@ if (localStorage.getItem('Usuario') != null) {
   usuario = localStorage.getItem('Usuario');
   htmlContentToAppend += ` User:` + " " + usuario + ``;
   document.getElementById('campoUsuario').innerHTML = htmlContentToAppend;
-  console.log(usuario);
+ // console.log(usuario);
 }
 
 

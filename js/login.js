@@ -2,7 +2,14 @@
 document.getElementById("label_pass").style.display = 'none';
 document.getElementById("label_user").style.display = 'none';
 
+//elemento precargado del carrito solo USO el ID para facilitar codigo, lo agrego aca para que al iniciar sesion este en el carrito
+let array_cart=[];
+ if (!array_cart.includes(50924)) {
+ array_cart.push(50924);
+   //localstorage guarda cada item con la clave ITEM y como texto gracias a JSON.Stringify.
+   localStorage.setItem('product', JSON.stringify(array_cart));
 
+ }
 
 /* Esta es mi funcion para pintar los borders de los inputs de rojo cuando falta la clave o el usuario */
 function changeColor(casilla) {
