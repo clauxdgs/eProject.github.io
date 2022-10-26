@@ -361,7 +361,7 @@ a.custom-card:hover {
   color: #009999;
   background-color: black;
   border-radius: 15px;
-  width: 85%;
+  width: fit-content;
 }
 
 #contenedor_filtros {
@@ -903,84 +903,6 @@ th {
 
 }
 
-@media screen and (max-width: 1440px) {
-
-  .h5img {
-    font-size: 20px;
-  }
-
-  .pimg {
-    font-size: 18px;
-  }
-
-  .imagecarruport {
-
-    width: 50%;
-    border-radius: 20%;
-    border: 10px solid #fbdf51;
-
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .h5img {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .pimg {
-    text-align: center;
-    font-size: 13px;
-  }
-
-  .imagecarruport {
-    margin-left: 20%;
-    width: 60%;
-    border-radius: 20%;
-    border: 10px solid #fbdf51;
-
-  }
-}
-
-@media screen and (max-width: 770px) {
-
-  .h5img {
-    text-align: center;
-    font-size: 12px;
-  }
-
-  .pimg {
-    text-align: center;
-    font-size: 10px;
-  }
-
-  .imagecarruport {
-    margin-left: 10%;
-    width: 80%;
-    border-radius: 20%;
-    border: 10px solid #fbdf51;
-  }
-}
-
-@media screen and (max-width: 600px) {
-
-  .h5img {
-    text-align: center;
-    font-size: 100%;
-  }
-
-  .pimg {
-    text-align: center;
-    font-size: 100%;
-  }
-
-  .imagecarruport {
-    margin-left: 0%;
-    width: 100%;
-    border-radius: 20%;
-    border: 10px solid #fbdf51;
-  }
-}
 
 .tablacostos {
   margin-left: -5%;
@@ -1035,4 +957,118 @@ th {
   background-color: #009999;
   box-shadow: 5px 10px #888888;
   box-shadow: 5px 10px 18px rgb(227, 209, 14);
+ }
+
+
+ @media screen and (max-width: 1440px) {
+
+   .h5img {
+     font-size: 20px;
+   }
+
+   .pimg {
+     font-size: 18px;
+   }
+
+   .imagecarruport {
+
+     width: 50%;
+     border-radius: 20%;
+     border: 10px solid #fbdf51;
+
+   }
+ }
+
+ @media screen and (max-width: 1200px) {
+   .h5img {
+     text-align: center;
+     font-size: 15px;
+   }
+
+   .pimg {
+     text-align: center;
+     font-size: 13px;
+   }
+
+   .imagecarruport {
+     margin-left: 20%;
+     width: 60%;
+     border-radius: 20%;
+     border: 10px solid #fbdf51;
+
+   }
+ }
+ @media screen and (max-width: 1000px) {
+  .info_products {
+    margin: auto;
+    width:100%;
+    font-size: 15px;
+  }
+ }
+
+ @media screen and (max-width: 770px) {
+
+   .h5img {
+     text-align: center;
+     font-size: 12px;
+   }
+
+   .pimg {
+     text-align: center;
+     font-size: 10px;
+   }
+
+   .imagecarruport {
+     margin-left: 10%;
+     width: 80%;
+     border-radius: 20%;
+     border: 10px solid #fbdf51;
+   }
+   .precio {
+     font-size: 15px;
+     background-color: #BFC9CA;
+     text-align: center;
+     color: black;
+     font-weight: 300;
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+
+   .h5img {
+     text-align: center;
+     font-size: 100%;
+   }
+
+   .pimg {
+     text-align: center;
+     font-size: 100%;
+   }
+
+   .imagecarruport {
+     margin-left: 0%;
+     width: 100%;
+     border-radius: 20%;
+     border: 10px solid #fbdf51;
+   }
+   .name_products {
+     font-weight: bolder;
+     color: #009999;
+     font-size: 25px;
+     width:100%;
+   }
+   
+   
+    .inputsfiltro .inputfiler{
+
+      width: 100%;
+      display: inline-block;
+
+    }
+     .inputsfiltro .btnfiltrado{
+
+       width: 100%;
+       display: block
+
+     }
  }

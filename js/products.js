@@ -75,7 +75,7 @@ function ShowCarList(array) {
                             <br><br><br><hr>
                             <p class="precio"><strong class="strong_products">Precio: </strong> ` + car.cost + '  <strong class="strong_products">' + car.currency + `</strong>
                             <div>
-                             <label style="font-weight:bolder; background-color:rgb(225, 225, 225); border-radius:5px; width: 25%; text-align: center;"><strong style="color: #009999;">VENDIDOS:</strong>` + car.soldCount + `</label></p>
+                             <label style="font-weight:bolder; background-color:rgb(225, 225, 225); border-radius:5px; width: fix-content; text-align: center;"><strong style="color: #009999;">VENDIDOS:</strong>` + car.soldCount + `</label></p>
                             </div> </p>
                             </div>
                           

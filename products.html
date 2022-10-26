@@ -102,20 +102,20 @@
 
       <div class="inputsfiltro">
 
-        <div class="inputfilter">
+        <div class="col-6 m-auto">
           <input class="form-control" type="number" placeholder="precio mínimo" id="inputmin" />
         </div>
-        <div class="inputfilter">
+        <div class="col-6 m-auto">
           <input class="form-control" type="number" placeholder="precio máximo" id="inputmax" />
         </div>
-        <div id="btnfiltro">
-          <div class="inputfilter btnfilter">
-            <button class="btn btn-dark btnfiltrado" id="btn_filtrar">
+        <div id="btnfiltro m-auto">
+          <div class="col-6">
+            <button class="btn btn-dark m-auto" style="color:#009999;" id="btn_filtrar">
               Filtrar
             </button>
           </div>
-          <div class="inputfilter btnfilter">
-            <button class="btn btn-dark btnfiltrado" id="btn_limpiar">
+          <div class="col-6">
+            <button class="btn btn-dark m-auto" style="color:#009999;" id="btn_limpiar">
               Limpiar Filtros
             </button>
           </div>
@@ -129,7 +129,7 @@
 
 
         <!--Creo un Input para el search!-->
-        <input class="form-control inputName" type="search" placeholder="escriba aqui" id="searchBar" />
+        <input class="form-control inputName col-6" type="search" placeholder="escriba aqui" id="searchBar" />
 
       </div>
     </div>
@@ -139,11 +139,11 @@
 
     <!-- CREAMOS UN DIV CONTAINER PARA ALMACENAR LOS DATOS DE LA TABLA QUE CREAMOS CON EL JSON DESDE JS-->
     <div class="container">
-      <div class="row">
-        <div class="list-group" id="car-list-container">
+     
+        <div class="list-group container col-12" id="car-list-container">
 
         </div>
-      </div>
+     
     </div>
   </main>
   <footer class="text-muted">
