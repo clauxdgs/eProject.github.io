@@ -44,7 +44,6 @@ if (credit.checked) {
 }
 
 function getitemlink() {
-     
      objetoscomprados = JSON.parse(localStorage.getItem('product'));
 
 
