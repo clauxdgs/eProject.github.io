@@ -79,7 +79,7 @@ function ShowCarList(array) {
                             </div> </p>
                             </div>
                           
-                            <div class="col-6 m" style="width :100%; aling-items:center;">
+                            <div class="col-6 m-auto" style="width :100%; aling-items:center;">
                             <img src="` + car.image + `" alt="product image"  class="imagen_productos"  id="image_car">
                             </div>
                            
