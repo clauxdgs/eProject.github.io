@@ -930,7 +930,7 @@ th {
   font-size: 15px;
 }
 .btntipoenvio{
-  width: 15%;
+  width: fit-content;
   height: 4%;
   text-align: center;
   font-weight: 400;
