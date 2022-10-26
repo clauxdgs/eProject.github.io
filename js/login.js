@@ -4,6 +4,7 @@ document.getElementById("label_user").style.display = 'none';
 
 //elemento precargado del carrito solo USO el ID para facilitar codigo, lo agrego aca para que al iniciar sesion este en el carrito
 let array_cart=[];
+array_cart=JSON.parse(localStorage.getItem('product'));
  if (!array_cart.includes(50924)) {
  array_cart.push(50924);
    //localstorage guarda cada item con la clave ITEM y como texto gracias a JSON.Stringify.
