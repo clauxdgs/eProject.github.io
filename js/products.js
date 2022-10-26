@@ -62,12 +62,12 @@ function ShowCarList(array) {
 
                 htmlContentToAppend += `
                 
-                <div onclick="setProductID(` + car.id + `)" class="list-group-item list-group-item-action cursor-active contenedor_listado col 10" >
-                <div class="row col-4">
+                <div onclick="setProductID(` + car.id + `)" class="list-group-item list-group-item-action cursor-active contenedor_listado col " >
+                <div class="row col-6">
                     <div>
-                        <div class="d-flex w-100 justify-content-between col-4" id="divContenido">
+                        <div class="d-flex w-100 justify-content-between col-12" id="divContenido">
                         
-                            <div class="mb-1 info_products" style="margin:25px; margin-left: 70px;">
+                            <div class="mb-1 info_products m-auto">
                             
                             <h2  class="name_products">` + car.name + `</h2> 
                             
@@ -79,7 +79,7 @@ function ShowCarList(array) {
                             </div> </p>
                             </div>
                           
-                            <div class="col-4" style="width :100%; aling-items:center;">
+                            <div class="col-6" style="width :100%; aling-items:center;">
                             <img src="` + car.image + `" alt="product image"  class="imagen_productos"  id="image_car">
                             </div>
                            
