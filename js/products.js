@@ -71,7 +71,7 @@ function ShowCarList(array) {
                             
                             <h2  class="name_products">` + car.name + `</h2> 
                             
-                            <p class="descripcion_productos" style="font-style:  italic;"> ` + car.description + `</p>
+                            <p class="descripcion_productos" style="font-style:italic;"> ` + car.description + `</p>
                             <br><br><br><hr>
                             <p class="precio"><strong class="strong_products">Precio: </strong> ` + car.cost + '  <strong class="strong_products">' + car.currency + `</strong>
                             <div>
@@ -79,7 +79,7 @@ function ShowCarList(array) {
                             </div> </p>
                             </div>
                           
-                            <div class="col-6" style="width :100%; aling-items:center;">
+                            <div class="col-6 m" style="width :100%; aling-items:center;">
                             <img src="` + car.image + `" alt="product image"  class="imagen_productos"  id="image_car">
                             </div>
                            
