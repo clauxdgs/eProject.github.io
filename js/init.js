@@ -1,9 +1,15 @@
 function limpiarPerfil() {
   localStorage.removeItem('Usuario');
+   localStorage.removeItem("profilenombre");
+   localStorage.removeItem("profiledonombre");
+   localStorage.removeItem("profileapellido");
+   localStorage.removeItem("profiledoApellido");
+   localStorage.removeItem("profileemail");
+   localStorage.removeItem("profiletel");
 }
 
 
-console.log("holaptmmmmmmmmmmmmmmmmm")
+
 //creo una variable usuario que lee el usuario almacenado el localStorage y lo muestra en "CAMPO USUARIO" que es un boton agregado en el html
 let usuario;
 if (localStorage.getItem('Usuario') != null) {
