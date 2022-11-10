@@ -5,6 +5,23 @@
  let campodoApellido = document.getElementById("doApellido");
  let campoemail = document.getElementById("email");
  let campotel = document.getElementById("telefono");
+ let campoImagen = document.getElementById("imagenprofile");
+ let foto=document.getElementById("imageProfile");
+
+function nuevaFoto(){
+     let file = new FileReader();
+
+     file.readAsDataURL(campoImagen.files[0]);
+     file.onload = () => {
+      let LINK = file.result;
+
+      localStorage.setItem("ProfilePic", LINK);
+
+      window.location.reload();
+ };
+ };
+
+
 
 function guardar(){
       let nombre = document.getElementById("nombre").value;
@@ -59,6 +76,16 @@ campoUsuario.innerHTML= usuario;
  campodoApellido.value=profiledoApellido;
  campoemail.value=profileemail;
  campotel.value=profiletel;
+
+let profilePic = () => {
+      return localStorage.getItem("ProfilePic");
+ };
+let ShowMyProfilePic = () => {
+     if (profilePic()) {
+         foto.src = profilePic();
+     }
+};
+ShowMyProfilePic();
 
  
 });

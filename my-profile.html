@@ -79,78 +79,89 @@
     </div>
   </nav>
   <main>
-    <br><br><br><br>
+    <br><br><br>
     <h1 class="titulo_productos text-center"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
         fill="currentColor" class="bi bi-person-circle" viewbox="0 0 16 16">
         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
         <path fill-rule="evenodd"
           d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
       </svg> MI PERFIL </h1>
-      <br><br>
-      <h6 class="text-center textstyle2">Puedes actualizar tus datos en cualquier momento</h6>
-    <div class="container col-12 text-center">
-
-      <br><br><br>
-      <form class="row g-3 needs-validation text-center col-12" novalidate>
-        <div class="col-md-6">
-          <label for="usuario" class="form-label textstyle2">USUARIO</label>
-          <label type="text" class="form-control" id="usuario"></label>
-
-
-        </div>
-
-        <div class="col-md-6 file-select" id="foto">
-          <label for="imagenprofile" class="form-label textstyle2"> Selecciona una imagen</label>
-          <input type="file" class="form-control btnfiltrado textstyle2" id="imagenprofile" name="foto">
-        </div>
-
-
-
-        <div class="col-md-6">
-          <label for="nombre" class="form-label textstyle2">Nombre</label>
-          <input type="text" class="form-control" id="nombre" required>
-          <div class="invalid-feedback">
-            Ingresa tu Nombre
-          </div>
-        </div>
-        <div class="col-md-6">
-          <label for="donombre" class="form-label textstyle2">Segundo Nombre</label>
-          <input type="text" class="form-control" id="donombre">
-        </div>
-        <div class="col-md-6">
-          <label for="apellido" class="form-label textstyle2">Apellido</label>
-          <input type="text" class="form-control" id="apellido" required>
-          <div class="invalid-feedback">
-            Ingresa tu Apellido
-          </div>
-
-        </div>
-        <div class="col-md-6">
-          <label for="doApellido" class="form-label textstyle2">Segundo Apellido</label>
-          <input type="text" class="form-control" id="doApellido">
-
-        </div>
-        <div class="col-md-6">
-          <label for="email" class="form-label textstyle2">Email</label>
-          <div class="input-group has-validation">
-            <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Ingresa tu Email
+    <br><br>
+    <h6 class="text-center textstyle2">Puedes actualizar tus datos en cualquier momento</h6>
+    <div class="container col-12 d-inline-flex m-1 mt-0 div0">
+      <div class="container col-md-2 m-2 div1">
+        <br><br><br><br><br>
+        <div class="container col-4">
+          <div class="card" style="width: 10rem; height:fit-content;">
+            <img class="card-img-top" src="img/img_perfil.png" alt="UserPic" id="imageProfile">
+            <div class="card-body">
+              <label type="text" class="form-control usernameProfile" id="usuario"></label>
             </div>
           </div>
+          <br><br><br><br>
         </div>
-        <div class="col-md-6">
-          <label for="telefono" class="form-label textstyle2">Teléfono</label>
-          <input type="tel" class="form-control" id="telefono" name="telefono" required>
-          
-          <div class="invalid-feedback">
-            Ingresa un número de contacto!
-          </div>
+      </div>
+      <div class="container col-md-10 text-center m-2 div2">
+        <div class="container text-center">
+          <br><br><br>
+          <form class="row g-3 needs-validation text-center" novalidate>
+            <div class="container ">
+              <div class="col-md-5 file-select" id="foto">
+                <label for="imagenprofile" class="form-label textstyle2"> Selecciona una imagen de perfil</label>
+                <input type="file" class="form-control btnfiltrado textstyle2" id="imagenprofile" name="foto"
+                  onchange="nuevaFoto()">
+              </div>
+            </div>
+
+
+
+            <div class="col-md-5">
+              <label for="nombre" class="form-label textstyle2">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">
+                Ingresa tu Nombre
+              </div>
+            </div>
+            <div class="col-md-5">
+              <label for="donombre" class="form-label textstyle2">Segundo Nombre</label>
+              <input type="text" class="form-control" id="donombre">
+            </div>
+            <div class="col-md-5">
+              <label for="apellido" class="form-label textstyle2">Apellido</label>
+              <input type="text" class="form-control" id="apellido" required>
+              <div class="invalid-feedback">
+                Ingresa tu Apellido
+              </div>
+
+            </div>
+            <div class="col-md-5">
+              <label for="doApellido" class="form-label textstyle2">Segundo Apellido</label>
+              <input type="text" class="form-control" id="doApellido">
+
+            </div>
+            <div class="col-md-5">
+              <label for="email" class="form-label textstyle2">Email</label>
+              <div class="input-group has-validation">
+                <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Ingresa tu Email
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <label for="telefono" class="form-label textstyle2">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" required>
+
+              <div class="invalid-feedback">
+                Ingresa un número de contacto!
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btnfiltrado" type="submit">Guardar Información</button>
+            </div>
+          </form>
         </div>
-        <div class="col-12">
-          <button class="btn btnfiltrado" type="submit">Guardar Información</button>
-        </div>
-      </form>
+      </div>
     </div>
   </main>
   <footer class="text-muted">
@@ -158,9 +169,11 @@
       <p class="float-end">
         <a href="#" class="linka2">Volver arriba</a>
       </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank" class="linka2">Jovenes a Programar</a> -
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank" class="linka2">Jovenes a
+          Programar</a> -
         2022</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf" class="linka2">aquí</a> para descargar la letra del obligatorio.</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf" class="linka2">aquí</a> para descargar la letra del obligatorio.
+      </p>
     </div>
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>

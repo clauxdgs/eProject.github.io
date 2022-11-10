@@ -962,6 +962,7 @@ th {
   box-shadow: 5px 10px #888888;
   box-shadow: 5px 10px 18px rgb(227, 209, 14);
 }
+
 .file-select {
   color: #009999;
   background-color: black;
@@ -969,6 +970,21 @@ th {
   width: fit-content;
 }
 
+#imageProfile {
+  width: 100%;
+  height: fit-content;
+
+}
+
+.usernameProfile {
+  font-size: 18px;
+  color: #009999;
+  font-weight: bolder;
+}
+
+.div2 {
+  margin-left: 10rem !important;
+}
 
 
 @media screen and (max-width: 1440px) {
@@ -1059,6 +1075,7 @@ th {
     color: black;
     font-weight: 300;
   }
+
   .jumbotron {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1070,6 +1087,27 @@ th {
     background-repeat: no-repeat;
     color: black;
     font-weight: bold;
+  }
+
+  .div0 {
+    width: 100% !important;
+    display: block !important;
+    margin: 0% !important;
+  }
+
+  .div1 {
+    width: 100% !important;
+    height: fit-content !important;
+    margin-left: 10% !important;
+    margin-bottom: 1% !important;
+    margin-top: -20% !important;
+  }
+
+  .div2 {
+    margin-left: 20% !important;
+    width: 100% !important;
+    height: fit-content !important;
+    margin-top: -25% !important;
   }
 }
 
@@ -1124,5 +1162,26 @@ th {
     background-repeat: no-repeat;
     color: black;
     font-weight: bold;
-    }
+  }
+
+  .div0 {
+    width: 100% !important;
+    display: block !important;
+    margin: 0% !important;
+  }
+
+  .div1 {
+    width: 100% !important;
+    height: fit-content !important;
+    margin-left: 0% !important;
+    margin-bottom: 1% !important;
+    margin-top: -20% !important;
+  }
+
+  .div2 {
+    margin-left: 0% !important;
+    width: 100% !important;
+    height: fit-content !important;
+    margin-top: -25% !important;
+  }
 }

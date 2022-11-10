@@ -6,6 +6,7 @@ function limpiarPerfil() {
    localStorage.removeItem("profiledoApellido");
    localStorage.removeItem("profileemail");
    localStorage.removeItem("profiletel");
+   localStorage.removeItem("ProfilePic")
 }
 
 
