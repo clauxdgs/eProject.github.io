@@ -1,12 +1,12 @@
 function limpiarPerfil() {
   localStorage.removeItem('Usuario');
-   localStorage.removeItem("profilenombre");
-   localStorage.removeItem("profiledonombre");
-   localStorage.removeItem("profileapellido");
-   localStorage.removeItem("profiledoApellido");
-   localStorage.removeItem("profileemail");
-   localStorage.removeItem("profiletel");
-   localStorage.removeItem("ProfilePic")
+  localStorage.removeItem("profilenombre");
+  localStorage.removeItem("profiledonombre");
+  localStorage.removeItem("profileapellido");
+  localStorage.removeItem("profiledoApellido");
+  localStorage.removeItem("profileemail");
+  localStorage.removeItem("profiletel");
+  localStorage.removeItem("ProfilePic")
 }
 
 
@@ -19,7 +19,7 @@ if (localStorage.getItem('Usuario') != null) {
   usuario = localStorage.getItem('Usuario');
   htmlContentToAppend += ` User:` + " " + usuario + ``;
   document.getElementById('campoUsuario').innerHTML = htmlContentToAppend;
- // console.log(usuario);
+  // console.log(usuario);
 }
 
 
