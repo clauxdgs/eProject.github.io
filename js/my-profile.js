@@ -9,7 +9,7 @@ let foto = document.getElementById("imageProfile");
 
 function nuevaFoto() {
      let file = new FileReader();
-
+//El método readAsDataURL es usado para leer el contenido del especificado Blob o File. Cuando la operación de lectura es terminada, el readyState (en-US) se convierte en DONE, y el loadend es lanzado. En ese momento, el atributo result contiene la información como un datos: URL representando la información del archivo como una cadena de caracteres codificados en base64.
      file.readAsDataURL(campoImagen.files[0]);
      file.onload = () => {
           let LINK = file.result;
